@@ -1,4 +1,2 @@
-riceapps-org-website
-====================
-
-Contains the code for the website hosted at riceapps.org.
+# rapps-site
+site built in next.js (react) for RiceApps

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="233px" height="233px" viewBox="0 0 233 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logos" transform="translate(-675.000000, -209.000000)">
+            <g id="logo-light" transform="translate(582.000000, 208.000000)">
+                <g id="logo" transform="translate(93.000000, 0.000000)">
+                    <polygon id="Rectangle-3" fill="#BCBDBF" points="76.3164063 134.482422 155.29541 153.541992 176.471191 233.048828 20.9384766 190.204102"></polygon>
+                    <polygon id="Rectangle-2" fill="#BCBDBF" points="134.321289 76.0527344 190.049805 20.4707031 232.787109 176.292969 176.249023 233.137695"></polygon>
+                    <polygon id="Rectangle" fill="#FFFFFF" points="111.806641 0.974609375 190.072266 20.3398437 20.9902344 190.287109 0.3984375 113.083984"></polygon>
+                    <polygon id="Triangle" fill="#FFFFFF" points="155.068359 153.519043 176.486816 233.112793 98.0551758 211.482666"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
