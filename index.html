@@ -127,8 +127,6 @@ ul li {
   padding: 1.35em 0;
   margin-right: 3em;
   font-size: 1.0em;
-  transition: 0.5s ease;
-  transition-property: font-size;
 }
 ul li a {
   text-decoration: none;
@@ -136,18 +134,21 @@ ul li a {
   font-size: 1.0em;
 }
 ul li:hover{
-  font-size: 1.2em;
+  position: relative;
+  /*font-size: 1.2em;*/
   font-weight: bold;
 }
 .nav{
+  position: relative;
   top:20px;
   text-decoration: none;
   color: white;
   font-size: 1.2em;
-  transition: 1.5s ease;
-  transition-property: color;
 }
 #navbar{
+  display: inline-block;
+  align-items: center;
+  justify-content: space-around;
   margin-left: 25%;
   width: 50%;
   padding-top: 50px;
@@ -173,7 +174,7 @@ ul li:hover{
 </div><img id="logo" class="img hvr-grow" src="logo-light.svg" onclick="split()">
 <div id="navbar">
   <ul>
-    <li><a href="index.html" class="nav">home</a></li>
+    <li><a href="aboutus.html" class="nav">home</a></li>
     <li><a href="projects.html" class="nav">projects</a></li>
     <li><a href="../events.html" class="nav">events</a></li>
     <li><a href="../faq.html" class="nav">faq</a></li>
@@ -214,7 +215,7 @@ ul li:hover{
 <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
 <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
-<script  src="particles.js"></script>
+<script src="particles.js"></script>
 
 
 </body>

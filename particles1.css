@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background: white;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+ul {
+  position: relative;
+  margin: 0;
+  z-index: 2;
+  text-transform: uppercase;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  padding: 1.35em 0;
+  margin-right: 3em;
+  font-size: 1.0em;
+}
+ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2em;
+}
+ul li:hover{
+  position: relative;
+  /*font-size: 1.2em;*/
+  font-weight: bold;
+}
+h1 {
+  position: relative;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 4px 5px #dddddd, 6px 7px #4e5148;
+  text-align: center;
+  z-index: 2;
+}
+h2 {
+  position: relative;
+  width: 20%;
+  margin-left: 40%;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;  
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+  z-index: 2;
+}
+p {
+  position: relative;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.navbar {
+  margin-left: 25.5%;
+  width: 50%;
+  padding-top: 70px;
+  background: transparent;
+  z-index: 10;
+}
+.about-us {
+  margin-left: 20%;
+  width: 60%;
+  z-index: 2;
+}
+
+.sticky {
+  position: fixed;
+  margin-left: 25%;
+  text-align: center;
+  z-index: 2;
+}
+
+.sticky + p {
+  padding-top: 102px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
