@@ -53,11 +53,17 @@
   border-radius: 50%;
   color: black;  
   position: relative;
-  margin-left: 70px;
+  margin-left: 100px;
   margin-top: 70px;
-  display: inline-block;
-
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   /*margin-bottom: 50px;*/
+}
+.member img{
+	position: absolute;
+	z-index: 0;
 }
 .name{
   text-align: center;
@@ -65,9 +71,10 @@
   font-size: 25px;
   transition: ease-in 0.2s;
   transition-property: opacity;
-  position: relative;
+  position: absolute;
   opacity: 0;
-  margin-top: 30%;
+  z-index: 2;
+  margin-top: 1%;
   line-height: 20px;
 }
 #icon{
@@ -81,7 +88,7 @@
   position: absolute;
 }
 .members {
-	background-color: white;
+ background-color: white;
 }
 .member:hover h3 {
   opacity: 1;
@@ -89,11 +96,14 @@
 .member:hover #icon{
   opacity: 1;
 }
+.member:hover img{
+	opacity: 0.2;
+}
 .developer{
   width: 80%;
   height: 700px;
   margin-top:10px;
-  margin-left: 10%;
+  margin-left: 15%;
   display: inline-block;
 }
 .developer h2{
@@ -103,30 +113,6 @@
   font-style: italic;
   margin-left: 30%;
 }
-/*
-#dev3{
-  margin-left: 320px;
-  margin-top:10px;
-}
-#dev4{
-  margin-left: 320px;
-  margin-top:280px;
-}
-#dev1{
-  margin-top: 10px;
-}
-#dev2{
-  margin-top: 280px;
-}
-#dev5{
-  margin-left: 640px;
-  margin-top:10px;
-}
-#dev6{
-  margin-left: 640px;
-  margin-top:280px;
-}
-*/
 </style>
 	<div class="project-space">
     	<div class="project-title">
@@ -269,35 +255,33 @@
 	      <h2 class="titles"></h2>
 	      <br>
 	      <div class="member" id="leader1">
-	      <h3 class='name'>John<br><br>Smith</h3>
+	      <img src="../pics/carpool/cade_ritter.jpg">
+	      <h3 class='name'>Cade<br><br>Ritter</h3>
 	      <i id="icon" class="fas fa-link fa-3x"></i>
 	    </div>
 	    <div class="member" id="leader2">
-	      <h3 class='name'>John<br><br>Smith</h3>
+	    <img src="../pics/carpool/cecile_wang.jpg">
+	      <h3 class='name'>Cecile<br><br>Wang</h3>
 	      <i id="icon" class="fas fa-link fa-3x"></i>
 	    </div>
 	      <div class="member" id="dev1">
-	      <h3 class='name'>John<br><br>Smith</h3>
+	      <img src="../pics/carpool/julian_ouyang.jpg">
+	      <h3 class='name'>Julian<br><br>Ouyang</h3>
 	      <i id="icon" class="fas fa-link fa-3x"></i>
 	    </div>
 	    <div class="member" id="dev2">
-	      <h3 class='name'>John<br><br>Smith</h3>
+	    <img src="../pics/carpool/miles_olson.jpg">
+	      <h3 class='name'>Miles<br><br>Olson</h3>
 	      <i id="icon" class="fas fa-link fa-3x"></i>
 	    </div>
 	    <div class="member" id="dev3">
-	      <h3 class='name'>John<br><br>Smith</h3>
+	    <img src="../pics/carpool/myra_ramdenbourg.jpg">
+	      <h3 class='name'>Myra<br><br>Ramdenbourg</h3>
 	      <i id="icon" class="fas fa-link fa-3x"></i>
 	    </div>
 	    <div class="member" id="dev4">
-	      <h3 class='name'>John<br><br>Smith</h3>
-	      <i id="icon" class="fas fa-link fa-3x"></i>
-	    </div>
-	    <div class="member" id="dev5">
-	      <h3 class='name'>John<br><br>Smith</h3>
-	      <i id="icon" class="fas fa-link fa-3x"></i>
-	    </div>
-	    <div class="member" id="dev6">
-	      <h3 class='name'>John<br><br>Smith</h3>
+	    <img src="../pics/carpool/teju_manchenella.jpg">
+	      <h3 class='name'>Teju<br><br>Manchenella</h3>
 	      <i id="icon" class="fas fa-link fa-3x"></i>
 	    </div>
 	  </div>

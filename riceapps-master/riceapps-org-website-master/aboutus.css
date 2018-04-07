@@ -98,7 +98,10 @@ p {
   z-index: 2;
   margin-top: 15%;
 }
-
+.aboutus{
+  width: 100%;
+  border: 1px solid black;
+}
 .sticky {
   position: fixed;
   top: 0px;
@@ -134,10 +137,9 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
-#cade{
-  background-image: url('../pics/cade_ritter.jpg');
-}
+
 #t3{
   width: 100%;
   z-index: 9999;
@@ -159,6 +161,9 @@ p {
   font-size: 15px;
   z-index: 9999;
 }
+.chair img{
+  z-index: 1;
+}
 .name{
   margin:auto;
   letter-spacing: 1.2px;
@@ -168,6 +173,7 @@ p {
   position: absolute;
   opacity: 0;
   line-height: 0.7em;
+  z-index: 2;
 }
 #icon{
   color: white;
@@ -185,6 +191,6 @@ p {
 .chair:hover #icon{
   opacity: 1;
 }
-.chair:hover{
-  background-image: none;
+.chair:hover img{
+  opacity: 0.2;
 }
