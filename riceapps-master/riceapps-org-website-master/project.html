@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" >
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>(Forked) Horizhontal Timeline </title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="project.css">
+
+  
+</head>
+
+<body>
+<style type="text/css">
+.project-space{
+  width: 100%;
+  height: 39%;
+  display: flex;
+}
+.project-title {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  box-shadow: 5px 5px 5px gray
+}
+.title-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: gray;
+  opacity: 0.7;
+  z-index: 2;
+}
+.icons {
+  width: 10%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member{
+  height: 220px;
+  width: 220px;
+  background-color: #c0ded9;
+  border-radius: 50%;
+  color: black;  
+  position: relative;
+  margin-left: 70px;
+  margin-top: 70px;
+  display: inline-block;
+
+  /*margin-bottom: 50px;*/
+}
+.name{
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 25px;
+  transition: ease-in 0.2s;
+  transition-property: opacity;
+  position: relative;
+  opacity: 0;
+  margin-top: 30%;
+  line-height: 20px;
+}
+#icon{
+  color: black;
+  position: absolute;
+  bottom: 35px;
+  left: 95px;
+  font-size: 20px;
+  opacity: 0;
+  transition-property: opacity;
+  position: absolute;
+}
+.members {
+	background-color: white;
+}
+.member:hover h3 {
+  opacity: 1;
+}
+.member:hover #icon{
+  opacity: 1;
+}
+.developer{
+  width: 80%;
+  height: 700px;
+  margin-top:10px;
+  margin-left: 10%;
+  display: inline-block;
+}
+.developer h2{
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  margin-left: 30%;
+}
+/*
+#dev3{
+  margin-left: 320px;
+  margin-top:10px;
+}
+#dev4{
+  margin-left: 320px;
+  margin-top:280px;
+}
+#dev1{
+  margin-top: 10px;
+}
+#dev2{
+  margin-top: 280px;
+}
+#dev5{
+  margin-left: 640px;
+  margin-top:10px;
+}
+#dev6{
+  margin-left: 640px;
+  margin-top:280px;
+}
+*/
+</style>
+	<div class="project-space">
+    	<div class="project-title">
+      		<div class="title-filter"></div>
+    	</div>
+    <div class="icons">
+    	<i class="fas fa-link fa-3x"></i>
+    	<i class="fab fa-github fa-3x"></i>
+    	<i class="fab fa-linkedin fa-3x"></i>
+    	<i class="fas fa-envelope fa-3x"></i>
+    </div>
+	</div>
+
+  <section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+					<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+					<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+					<li><a href="#0" data-date="20/05/2014">20 May</a></li>
+					<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+					<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+					<li><a href="#0" data-date="19/09/2014">19 Sep</a></li>
+					<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+					<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+					<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+					<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="16/01/2014">
+				<h2>Horizontal Timeline</h2>
+				<em>January 16th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="28/02/2014">
+				<h2>Event title here</h2>
+				<em>February 28th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/04/2014">
+				<h2>Event title here</h2>
+				<em>March 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/05/2014">
+				<h2>Event title here</h2>
+				<em>May 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="09/07/2014">
+				<h2>Event title here</h2>
+				<em>July 9th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="30/08/2014">
+				<h2>Event title here</h2>
+				<em>August 30th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="15/09/2014">
+				<h2>Event title here</h2>
+				<em>September 15th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="01/11/2014">
+				<h2>Event title here</h2>
+				<em>November 1st, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="10/12/2014">
+				<h2>Event title here</h2>
+				<em>December 10th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="19/01/2015">
+				<h2>Event title here</h2>
+				<em>January 19th, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="03/03/2015">
+				<h2>Event title here</h2>
+				<em>March 3rd, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="project.js"></script>
+
+
+	<div class="members">
+	  <div class="developer">
+	      <h2 class="titles"></h2>
+	      <br>
+	      <div class="member" id="leader1">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="leader2">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	      <div class="member" id="dev1">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev2">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev3">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev4">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev5">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev6">
+	      <h3 class='name'>John<br><br>Smith</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	  </div>
+	  </div>
+
+
+</body>
+
+</html>
