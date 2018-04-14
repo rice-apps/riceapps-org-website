@@ -17,35 +17,19 @@
 
 <body>
 <style type="text/css">
-.project-space{
-  width: 100%;
-  height: 39%;
-  display: flex;
+#icons{
+	margin-top: 15rem;
+	float: left;
+	width: 100%;
+	height:10%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
 }
-.project-title {
-  width: 90%;
-  height: 100%;
-  position: relative;
-  box-shadow: 5px 5px 5px gray
+#icons i{
+	margin-top: 10%;
 }
-.title-filter {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: gray;
-  opacity: 0.7;
-  z-index: 2;
-}
-.icons {
-  width: 10%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-
 .member{
   height: 220px;
   width: 220px;
@@ -101,7 +85,7 @@
 .developer{
   width: 90%;
   margin-top:10px;
-  margin-left: 0;
+  margin-left: -2.5%;
   height: 70rem;
   display: inline-block;
 }
@@ -110,25 +94,103 @@
 	margin-left:17%;
 }
 #title{
-	margin-left: 25rem;
+	margin-left: 20rem;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 3rem;
 }
-</style>
-	<div class="project-space">
-    	<div class="project-title">
-      		<div class="title-filter"></div>
-    	</div>
-    <div class="icons">
-    	<i class="fas fa-link fa-3x"></i>
-    	<i class="fab fa-github fa-3x"></i>
-    	<i class="fab fa-linkedin fa-3x"></i>
-    	<i class="fas fa-envelope fa-3x"></i>
-    </div>
-	</div>
+#projectName{
+	margin-top: 5rem;
+	color: black; 
+	font-size: 5rem;
+	letter-spacing: 0.8rem;
+	text-decoration: underline;
+}
+#captions{
+	background-color: transparent;
+	width: 80%;
+	margin-left: 10%;
+	height: 10%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#projectIntro{
+	margin-top: 5rem;
+	color:grey;
+}
+#projectSpace{
+	width: 80%;
+	margin-left: 10%;
+	height: 60%;
+}
+#picture{
+	width: 100%;
+}
+#introduction{
+	margin-top: 2rem;
+	width: 55%;
+	height: 65%;
+	letter-spacing: 0.2rem;
+	line-height: 2.6rem;
+	background-color: transparent;
+	border: 0.2px solid #D3D3D3;
+	box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+	padding: 8rem;
+	float: left;
+}
+.graphs{
+	margin-top: 2rem;
+	width: 30%;
+	margin-left: 2rem;
+	background-color: red;
+	height: 28%;
+	float: right;
+}
+#pics{
+	width: 100%;
+	height: 100%;
+}
+#below{
+	margin-top: 10rem;
+}
 
-  <section class="cd-horizontal-timeline">
+</style>
+
+<div id="captions">
+<div id="projectName">CARPOOL</div>
+<div id="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+</div>
+<img id="picture" src="pics/beakspeak.png">
+<div id='projectSpace'>
+	
+	<div id="introduction"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p></div>
+	<div class="graphs"><img id="pics" src="pics/cars.jpg"></div>
+	<div class="graphs" id="below"><img id="pics" src="pics/cars.jpg"></div>
+	<div id='icons'>
+	<i class="fas fa-link fa-3x"></i>
+      <i class="fab fa-github fa-3x"></i>
+      <i class="fab fa-linkedin fa-3x"></i>
+      <i class="fas fa-envelope fa-3x"></i></div>
+</div>
+<section class="cd-horizontal-timeline">
 	<div class="timeline">
 		<div class="events-wrapper">
 			<div class="events">
