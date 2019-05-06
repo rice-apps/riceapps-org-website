@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <title class="next-head">faq</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="particles.css">
+</head>
+
+<body id="body">
+<style type="text/css">
+ul {
+  position: relative;
+  margin: 0;
+  z-index: 2;
+  text-transform: uppercase;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  padding: 1.35em 0;
+  margin-right: 3em;
+  font-size: 1.0em;
+  transition: 0.5s ease;
+  transition-property: font-size;
+}
+ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.0em;
+}
+ul li:hover{
+  font-weight: bold;
+}
+.nav{
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#navbar{
+  margin-left: 25.5%;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  padding-top: 4em;
+  background: transparent;
+  color:#000000;
+  z-index: 2;
+}
+#particles-js{
+  z-index: 1;
+  height: 100%;
+}
+/*FAQS*/
+.faq_container{
+  z-index: 2;
+  position: absolute;
+  width: 60%;
+  margin-left: 22%;
+  margin-top: 100px;
+}
+.faq_question {
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+.faq{
+  margin-top: 20px;
+}
+.faq_answer_container {
+  margin-top: 20px;
+  height: 0px;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.toggle{
+display:inline-block;
+height:16px;
+width:16px;
+background:url("http://icons.iconarchive.com/icons/icojam/blue-bits/16/math-add-icon.png");
+}
+.toggle.expanded{
+background:url("http://icons.iconarchive.com/icons/icojam/blue-bits/16/math-minus-icon.png");
+}
+</style>
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<div id="navbar">
+  <ul>
+    <li><a href="aboutus.html" class="nav">home</a></li>
+    <li><a href="projects.html" class="nav" >projects</a></li>
+    <li><a href="events.html" class="nav" >events</a></li>
+    <li><a href="faq.html" class="nav" style="font-weight: bold;">faq</a></li>
+    <li><a href="contactus.html" class="nav">contact us</a></li>
+  </ul>
+</div>
+<div class="faq_container">
+        <div class="faq">
+          <div class="faq_question"><div class="toggle"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+            <div class="faq_answer_container">
+              <div class="faq_answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. </div>
+            </div>    
+        </div>
+        <div class="faq">
+          <div class="faq_question"><div class="toggle"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+            <div class="faq_answer_container">
+              <div class="faq_answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. </div>
+            </div>    
+        </div>
+        <div class="faq">
+          <div class="faq_question"><div class="toggle"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+            <div class="faq_answer_container">
+              <div class="faq_answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. </div>
+            </div>    
+        </div>
+      </div>
+
+
+
+
+
+
+
+<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+<script src="particles.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  $('.faq_question').click(function() {
+
+    if ($(this).parent().is('.open')){
+      $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},200);
+      $(this).find('.toggle').toggleClass("expanded");
+      $(this).closest('.faq').removeClass('open');
+      
+
+      }else{
+        var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+        $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},200);
+        $(this).find('.toggle').toggleClass("expanded");
+        $(this).closest('.faq').addClass('open');
+        
+      }
+
+  });
+});
+</script>
+
+</body>
+</html>

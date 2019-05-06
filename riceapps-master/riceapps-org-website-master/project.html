@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" >
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carpool</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="project.css">
+
+  
+</head>
+
+<body>
+<style type="text/css">
+#icons{
+	margin-top: 15rem;
+	float: left;
+	width: 100%;
+	height:10%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+}
+#icons i{
+	margin-top: 10%;
+}
+.member{
+  height: 220px;
+  width: 220px;
+  background-color: #c0ded9;
+  border-radius: 50%;
+  color: black;  
+  position: relative;
+  margin-left: 17%;
+  margin-top: 70px;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.member img{
+	position: absolute;
+	z-index: 0;
+}
+.name{
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 25px;
+  transition: ease-in 0.2s;
+  transition-property: opacity;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  margin-top: 1%;
+  line-height: 20px;
+}
+#icon{
+  color: black;
+  position: absolute;
+  bottom: 35px;
+  left: 95px;
+  font-size: 20px;
+  opacity: 0;
+  transition-property: opacity;
+  position: absolute;
+}
+.members {
+ background-color: white;
+}
+.member:hover h3 {
+  opacity: 1;
+}
+.member:hover #icon{
+  opacity: 1;
+}
+.member:hover img{
+	opacity: 0.2;
+}
+.developer{
+  width: 90%;
+  margin-top:10px;
+  margin-left: -2.5%;
+  height: 70rem;
+  display: inline-block;
+}
+#border{
+	border: 1px solid black;
+	margin-left:17%;
+}
+#title{
+	margin-left: 20rem;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 3rem;
+}
+#projectName{
+	margin-top: 5rem;
+	color: black; 
+	font-size: 5rem;
+	letter-spacing: 0.8rem;
+	text-decoration: underline;
+}
+#captions{
+	background-color: transparent;
+	width: 80%;
+	margin-left: 10%;
+	height: 10%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#projectIntro{
+	margin-top: 5rem;
+	color:grey;
+}
+#projectSpace{
+	width: 80%;
+	margin-left: 10%;
+	height: 60%;
+}
+#picture{
+	width: 100%;
+}
+#introduction{
+	margin-top: 2rem;
+	width: 55%;
+	height: 65%;
+	letter-spacing: 0.2rem;
+	line-height: 2.6rem;
+	background-color: transparent;
+	border: 0.2px solid #D3D3D3;
+	box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+	padding: 8rem;
+	float: left;
+}
+.graphs{
+	margin-top: 2rem;
+	width: 30%;
+	margin-left: 2rem;
+	background-color: red;
+	height: 28%;
+	float: right;
+}
+#pics{
+	width: 100%;
+	height: 100%;
+}
+#below{
+	margin-top: 10rem;
+}
+
+</style>
+
+<div id="captions">
+<div id="projectName">CARPOOL</div>
+<div id="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+</div>
+<img id="picture" src="pics/beakspeak.png">
+<div id='projectSpace'>
+	
+	<div id="introduction"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p></div>
+	<div class="graphs"><img id="pics" src="pics/cars.jpg"></div>
+	<div class="graphs" id="below"><img id="pics" src="pics/cars.jpg"></div>
+	<div id='icons'>
+	<i class="fas fa-link fa-3x"></i>
+      <i class="fab fa-github fa-3x"></i>
+      <i class="fab fa-linkedin fa-3x"></i>
+      <i class="fas fa-envelope fa-3x"></i></div>
+</div>
+<section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+					<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+					<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+					<li><a href="#0" data-date="20/05/2014">20 May</a></li>
+					<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+					<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+					<li><a href="#0" data-date="19/09/2014">19 Sep</a></li>
+					<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+					<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+					<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+					<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="16/01/2014">
+				<h2>Horizontal Timeline</h2>
+				<em>January 16th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="28/02/2014">
+				<h2>Event title here</h2>
+				<em>February 28th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/04/2014">
+				<h2>Event title here</h2>
+				<em>March 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/05/2014">
+				<h2>Event title here</h2>
+				<em>May 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="09/07/2014">
+				<h2>Event title here</h2>
+				<em>July 9th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="30/08/2014">
+				<h2>Event title here</h2>
+				<em>August 30th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="15/09/2014">
+				<h2>Event title here</h2>
+				<em>September 15th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="01/11/2014">
+				<h2>Event title here</h2>
+				<em>November 1st, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="10/12/2014">
+				<h2>Event title here</h2>
+				<em>December 10th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="19/01/2015">
+				<h2>Event title here</h2>
+				<em>January 19th, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="03/03/2015">
+				<h2>Event title here</h2>
+				<em>March 3rd, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="project.js"></script>
+
+
+	<div class="members">
+	<p id='title'>Developers</p>
+	  <div class="developer">
+	  <div id='border'></div>
+	      <br>
+	      <div class="member" id="leader1">
+	      <img src="pics/carpool/cade_ritter.jpg">
+	      <h3 class='name'>Cade<br><br>Ritter</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="leader2">
+	    <img src="pics/carpool/cecile_wang.jpg">
+	      <h3 class='name'>Cecile<br><br>Wang</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	      <div class="member" id="dev1">
+	      <img src="pics/carpool/julian_ouyang.jpg">
+	      <h3 class='name'>Julian<br><br>Ouyang</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev2">
+	    <img src="pics/carpool/miles_olson.jpg">
+	      <h3 class='name'>Miles<br><br>Olson</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev3">
+	    <img src="pics/carpool/myra_ramdenbourg.jpg">
+	      <h3 class='name'>Myra<br><br>Ramdenbourg</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	    <div class="member" id="dev4">
+	    <img src="pics/carpool/teju_manchenella.jpg">
+	      <h3 class='name'>Teju<br><br>Manchenella</h3>
+	      <i id="icon" class="fas fa-link fa-3x"></i>
+	    </div>
+	  </div>
+	  </div>
+
+
+</body>
+
+</html>
